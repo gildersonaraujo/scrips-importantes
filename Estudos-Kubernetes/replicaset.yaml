@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: ngimx-rs
+  labels:
+    app: myapp-nginx
+    
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      container: principal
+  template:
+    metadata:
+      labels:
+        container: principal
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 80

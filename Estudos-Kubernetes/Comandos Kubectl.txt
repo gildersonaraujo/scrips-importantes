@@ -1,0 +1,10 @@
+get pods  - Lista os podes existentes
+Get nodes - Lista os nodes existentes
+delete pod (nome do pod) Delete o pod
+describe pod  - detalhes sobre po
+logs pod - lista os logs do pod
+get pod -w - assistir os pod em tempo real
+get pod -owide - visualizar mais detalhes do pod, como ip, node e etc. 
+explain resouece type. Explica a funcionalidade de cada recurso. 
+
+kubectl scale replicaset ngimx-rs --replicas=0 = definir numeros de pods para gerenciamento do replicaset 
